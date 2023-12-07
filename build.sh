@@ -9,7 +9,7 @@ readonly SCRIPT_NAME="$(basename "${SCRIPT_PATH}")"
 readonly SCRIPT_DIRECTORY_PATH="$(dirname "${SCRIPT_PATH}")"
 
 readonly DOCKER_OUTPUT_PATH="${SCRIPT_DIRECTORY_PATH}/docker-out"
-readonly TARGET_OUTPUT_PATH="/my-other-project-using-these-artifacts/sqlite-artifacts"
+readonly TARGET_OUTPUT_PATH="my-other-project-using-these-artifacts/sqlite-artifacts"
 
 cd "$SCRIPT_DIRECTORY_PATH" \
 	|| { echo "'$SCRIPT_NAME' could not change to directory '$SCRIPT_DIRECTORY_PATH'"; exit 1; }
